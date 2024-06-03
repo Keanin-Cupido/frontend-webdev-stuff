@@ -1,0 +1,196 @@
+:root {
+    --cl-main: #2d3250;
+    --cl-main-light-1: #424769;
+    --cl-main-light-2: #676f9d;
+    --cl-white: #ffffff;
+    --cl-main-alt: #f9b17a;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: var(--cl-main);
+
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--cl-white);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+/* Misc */
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 0.25em 0em;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--cl-main-light-2);
+}
+
+a:hover {
+    color: var(--cl-main-white);
+    transition: all 0.05s ease;
+}
+
+input {
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: var(--cl-main-light-1);
+}
+
+.border-left {
+    border-left: 2px solid var(--cl-main-alt);
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    max-width: 175px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn--primary {
+    color: var(--cl-main);
+    background: var(--cl-main-alt);
+    box-shadow: 0 0 10px var(--cl-main-alt);
+}
+
+.btn--primary:hover {
+    box-shadow: 0 0 14px var(--cl-main-alt);
+    transform: scale(1.02);
+}
+
+/* Input & Label */
+input[type=email],
+input[type=password] {
+    font-family: inherit;
+    font-size: 1rem;
+    background: var(--cl-main-light-1);
+    color: var(--cl-white);
+    padding: 0.25em;
+}
+
+label {
+    font-size: 0.8rem;
+    color: var(--cl-main-light-2);
+}
+
+.main--left,
+.main--right {
+    width: 100%;
+    max-width: 50vw;
+    min-height: 100vh;
+}
+
+.main--left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 1.5em;
+    padding: 5em;
+}
+
+.main--left .registration__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 1em;
+}
+
+.registration__form--extra {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socials {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.socials>p {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--cl-main-light-2);
+}
+
+.socials .icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5em;
+}
+
+.email_input-container,
+.password_input-container {
+    width: 100%;
+    min-width: 400px;
+    height: 80px;
+    padding: 1em;
+    background: var(--cl-main-light-1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5em;
+}
+
+.main--right {
+    background-image: url('./imgs/bg_img.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
